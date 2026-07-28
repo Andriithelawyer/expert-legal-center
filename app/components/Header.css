@@ -1,0 +1,261 @@
+.header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#ffffff;
+  border-bottom:1px solid #E8EDF3;
+  box-shadow:0 3px 14px rgba(15,45,82,.04);
+}
+
+.headerContent{
+  height:84px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  text-decoration:none;
+}
+
+.logoLink{
+  text-decoration:none;
+}
+
+.logo h2{
+  margin:0;
+  color:#0F2D52;
+  font-size:34px;
+  font-weight:700;
+}
+
+.logo span{
+  display:block;
+  margin-top:4px;
+  color:#6B7280;
+  font-size:15px;
+}
+
+.navigation{
+  display:flex;
+  align-items:center;
+  gap:38px;
+}
+
+.navigation a{
+  text-decoration:none;
+  color:#374151;
+  font-size:17px;
+  font-weight:500;
+  transition:.25s;
+}
+
+.navigation a:hover{
+  color:#0F2D52;
+}
+
+/* ---------- КНОПКА "КОНТАКТИ" ---------- */
+
+.navButton{
+  background:none;
+  border:none;
+  padding:0;
+  margin:0;
+
+  cursor:pointer;
+
+  color:#374151;
+  font-size:17px;
+  font-weight:500;
+  font-family:inherit;
+
+  transition:.25s;
+}
+
+.navButton:hover{
+  color:#0F2D52;
+}
+
+.headerButton{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 28px;
+  background:#0F2D52;
+  color:#ffffff;
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:600;
+  transition:.25s;
+}
+
+.headerButton:hover{
+  background:#1B4F8A;
+  transform:translateY(-2px);
+}
+
+/* ---------- BURGER ---------- */
+
+.burger{
+  display:none;
+  width:44px;
+  height:44px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  position:relative;
+  z-index:1201;
+}
+
+.burger span{
+  display:block;
+  width:28px;
+  height:3px;
+  background:#0F2D52;
+  margin:6px auto;
+  border-radius:3px;
+  transition:.3s;
+}
+
+.burger.active span:nth-child(1){
+  transform:translateY(9px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2){
+  opacity:0;
+}
+
+.burger.active span:nth-child(3){
+  transform:translateY(-9px) rotate(-45deg);
+}
+
+/* ---------- MOBILE MENU ---------- */
+
+.mobileMenu{
+  position:fixed;
+  top:0;
+  right:-100%;
+  width:290px;
+  height:100vh;
+
+  background:#ffffff;
+
+  display:flex;
+  flex-direction:column;
+
+  padding:110px 30px 40px;
+
+  gap:24px;
+
+  transition:.35s ease;
+
+  z-index:1200;
+
+  box-shadow:-10px 0 30px rgba(0,0,0,.12);
+}
+
+.mobileMenu.open{
+  right:0;
+}
+
+.mobileMenu a{
+  text-decoration:none;
+  color:#0F2D52;
+  font-size:20px;
+  font-weight:600;
+}
+
+/* ---------- КНОПКА "КОНТАКТИ" В МОБИЛЬНОМ МЕНЮ ---------- */
+
+.mobileMenuLink{
+  background:none;
+  border:none;
+  padding:0;
+
+  text-align:left;
+
+  cursor:pointer;
+
+  color:#0F2D52;
+
+  font-size:20px;
+  font-weight:600;
+  font-family:inherit;
+}
+
+.mobileButton{
+  margin-top:18px;
+
+  background:#0F2D52;
+
+  color:white !important;
+
+  text-align:center;
+
+  padding:15px;
+
+  border-radius:12px;
+}
+
+.mobileOverlay{
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,.35);
+
+  z-index:1100;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:1000px){
+
+  .navigation{
+    display:none;
+  }
+
+  .headerButton{
+    display:none;
+  }
+
+  .burger{
+    display:block;
+  }
+
+}
+
+@media(max-width:700px){
+
+  .headerContent{
+    height:72px;
+  }
+
+  .logo h2{
+    font-size:26px;
+  }
+
+  .logo span{
+    font-size:13px;
+  }
+
+  .container{
+    padding:0 20px;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .logo h2{
+    font-size:22px;
+  }
+
+  .logo span{
+    font-size:12px;
+  }
+
+  .mobileMenu{
+    width:100%;
+  }
+
+}

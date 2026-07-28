@@ -1,0 +1,66 @@
+.cases {
+  padding: 100px 40px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 42px;
+  color: #0F2D52;
+  margin-bottom: 60px;
+}
+
+.casesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.caseCard {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #e4e8ef;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 18px rgba(15, 45, 82, 0.05);
+}
+
+.caseCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(15, 45, 82, 0.12);
+  border-color: #0F2D52;
+}
+
+.caseIcon {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.caseCard h3 {
+  color: #0F2D52;
+  font-size: 24px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.caseCard p {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 17px;
+  flex: 1;
+}
+
+.caseLink {
+  margin-top: 25px;
+  color: #0F2D52;
+  font-weight: 700;
+  font-size: 17px;
+}

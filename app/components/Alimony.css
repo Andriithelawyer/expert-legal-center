@@ -1,0 +1,125 @@
+.alimonyHero {
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5fb 100%);
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.alimonyHeroContent {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.alimonyBadge {
+  display: inline-block;
+  background: #0F2D52;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.alimonyHero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #0F2D52;
+  margin-bottom: 25px;
+}
+
+.alimonyLead {
+  font-size: 22px;
+  color: #4B5563;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.alimonySteps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.alimonySteps div {
+  font-size: 18px;
+  color: #30465E;
+  font-weight: 500;
+}
+
+.alimonyButton {
+  display: inline-block;
+  background: #0F2D52;
+  color: #ffffff;
+  padding: 16px 34px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .25s ease;
+}
+
+.alimonyButton:hover {
+  background: #18457D;
+}
+
+.alimonyCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(15,45,82,.08);
+}
+
+.alimonyCardBadge {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px 18px;
+  background: #EAF3FF;
+  color: #0F2D52;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.alimonyCard ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.alimonyCard li {
+  margin-bottom: 18px;
+  color: #30465E;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.alimonyCard li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+
+  .alimonyHeroContent {
+    grid-template-columns: 1fr;
+  }
+
+  .alimonyHero h1 {
+    font-size: 38px;
+  }
+
+  .alimonyLead {
+    font-size: 20px;
+  }
+
+  .alimonyCard {
+    margin-top: 20px;
+    padding: 30px;
+  }
+
+}

@@ -1,0 +1,46 @@
+.dracsFaq {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.dracsFaqList {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dracsFaqItem {
+  background: #F8FBFF;
+  border: 1px solid #E5EAF0;
+  border-radius: 18px;
+  padding: 28px 32px;
+  transition: all .25s ease;
+}
+
+.dracsFaqItem:hover {
+  border-color: #0F2D52;
+  box-shadow: 0 12px 28px rgba(15,45,82,.08);
+}
+
+.dracsFaqItem h3 {
+  margin: 0 0 14px;
+  color: #0F2D52;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.dracsFaqItem p {
+  margin: 0;
+  color: #4B5563;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+@media (max-width:900px){
+
+  .dracsFaq{
+    padding:70px 0;
+  }
+
+}

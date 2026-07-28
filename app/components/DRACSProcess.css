@@ -1,0 +1,61 @@
+.dracsProcess {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.dracsProcessGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.dracsStep {
+  background: #F8FBFF;
+  border: 1px solid #E5EAF0;
+  border-radius: 20px;
+  padding: 34px 28px;
+  transition: all .25s ease;
+}
+
+.dracsStep:hover {
+  transform: translateY(-5px);
+  border-color: #0F2D52;
+  box-shadow: 0 14px 30px rgba(15,45,82,.08);
+}
+
+.dracsStepNumber {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #0F2D52;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.dracsStep h3 {
+  color: #0F2D52;
+  font-size: 22px;
+  margin-bottom: 18px;
+  line-height: 1.35;
+}
+
+.dracsStep p {
+  color: #4B5563;
+  line-height: 1.75;
+  font-size: 17px;
+  margin: 0;
+}
+
+@media (max-width:900px){
+
+  .dracsProcess{
+    padding:70px 0;
+  }
+
+}

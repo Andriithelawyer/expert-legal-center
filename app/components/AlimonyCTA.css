@@ -1,0 +1,65 @@
+.alimonyCTA {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.alimonyCTABox {
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #0F2D52 0%, #1D4F8C 100%);
+  border-radius: 24px;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+.alimonyCTABox h2 {
+  font-size: 40px;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.alimonyCTABox p {
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  opacity: 0.95;
+}
+
+.alimonyCTAButton {
+  display: inline-block;
+  padding: 18px 38px;
+  background: white;
+  color: #0F2D52;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all .25s ease;
+}
+
+.alimonyCTAButton:hover {
+  transform: translateY(-3px);
+  background: #F3F7FB;
+}
+
+@media (max-width:900px){
+
+  .alimonyCTA{
+    padding:70px 0;
+  }
+
+  .alimonyCTABox{
+    padding:40px 28px;
+  }
+
+  .alimonyCTABox h2{
+    font-size:32px;
+  }
+
+  .alimonyCTABox p{
+    font-size:18px;
+  }
+
+}

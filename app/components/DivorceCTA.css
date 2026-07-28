@@ -1,0 +1,57 @@
+.divorceCTA {
+  padding: 90px 0;
+  background: #0F2D52;
+}
+
+.ctaCard {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaCard h2 {
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 1.3;
+  margin-bottom: 28px;
+}
+
+.ctaCard p {
+  color: rgba(255,255,255,.92);
+  font-size: 21px;
+  line-height: 1.8;
+  margin-bottom: 42px;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #ffffff;
+  color: #0F2D52;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 17px 38px;
+  border-radius: 12px;
+  transition: .3s;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.18);
+}
+
+@media (max-width: 900px) {
+
+  .divorceCTA {
+    padding: 70px 0;
+  }
+
+  .ctaCard h2 {
+    font-size: 32px;
+  }
+
+  .ctaCard p {
+    font-size: 18px;
+  }
+
+}

@@ -1,0 +1,217 @@
+.hero{
+  background:linear-gradient(135deg,#f8fbff 0%,#eef5fb 100%);
+  padding:65px 0;
+}
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 30px;
+}
+
+.heroContent{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:42px;
+  align-items:center;
+}
+
+.heroBadge{
+  display:inline-block;
+  background:#0F2D52;
+  color:#ffffff;
+  padding:7px 16px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.05em;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  font-size:42px;
+  line-height:1.18;
+  color:#0F2D52;
+  margin-bottom:18px;
+  font-weight:700;
+}
+
+.hero p{
+  font-size:19px;
+  color:#4B5563;
+  line-height:1.6;
+  margin-bottom:24px;
+  max-width:680px;
+}
+
+.button{
+  display:inline-block;
+  background:#0F2D52;
+  color:#ffffff;
+  padding:14px 28px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:600;
+  transition:.25s;
+}
+
+.button:hover{
+  background:#18457D;
+  transform:translateY(-2px);
+}
+
+.heroAdvantages{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:24px;
+  font-size:16px;
+  color:#0F2D52;
+  font-weight:600;
+}
+
+.heroCard{
+  background:#ffffff;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 18px 36px rgba(15,45,82,.08);
+}
+
+.heroCardBadge{
+  display:inline-block;
+  margin-bottom:18px;
+  padding:7px 16px;
+  background:#EAF3FF;
+  color:#0F2D52;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+}
+
+.heroCard h3{
+  font-size:24px;
+  color:#0F2D52;
+  margin-bottom:16px;
+  line-height:1.35;
+}
+
+.heroList{
+  margin-top:22px;
+  padding:0;
+  list-style:none;
+}
+
+.heroList li{
+  margin-bottom:14px;
+  font-size:17px;
+  color:#30465E;
+  font-weight:500;
+}
+
+/* ---------- Планшети ---------- */
+
+@media (max-width:1024px){
+
+  .heroContent{
+    grid-template-columns:1fr;
+    gap:36px;
+  }
+
+  .heroCard{
+    max-width:700px;
+    margin:0 auto;
+  }
+
+}
+
+/* ---------- Телефони ---------- */
+
+@media (max-width:768px){
+
+  .hero{
+    padding:42px 0;
+  }
+
+  .container{
+    padding:0 20px;
+  }
+
+  .hero h1{
+    font-size:26px;
+    line-height:1.25;
+    margin-bottom:18px;
+  }
+
+  .hero p{
+    font-size:17px;
+    line-height:1.7;
+  }
+
+  .button{
+    width:100%;
+    text-align:center;
+    padding:16px;
+    font-size:17px;
+  }
+
+  .heroAdvantages{
+    flex-direction:column;
+    gap:10px;
+    font-size:15px;
+  }
+
+  .heroCard{
+    padding:24px;
+  }
+
+  .heroCard h3{
+    font-size:22px;
+    line-height:1.45;
+  }
+
+  .heroList li{
+    font-size:16px;
+    line-height:1.6;
+  }
+
+}
+
+/* ---------- Маленькі телефони ---------- */
+
+@media (max-width:480px){
+
+  .hero{
+    padding:34px 0;
+  }
+
+  .container{
+    padding:0 16px;
+  }
+
+  .heroBadge{
+    font-size:12px;
+  }
+
+  .hero h1{
+    font-size:22px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .heroCard{
+    padding:20px;
+    border-radius:14px;
+  }
+
+  .heroCard h3{
+    font-size:20px;
+  }
+
+  .heroList li{
+    font-size:15px;
+  }
+
+}

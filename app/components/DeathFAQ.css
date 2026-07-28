@@ -1,0 +1,64 @@
+.deathFAQ {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.deathFAQ h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #0F2D52;
+  margin-bottom: 50px;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.faqCard {
+  background: #f8fbff;
+  border-radius: 22px;
+  padding: 36px;
+  box-shadow: 0 18px 45px rgba(15, 45, 82, 0.08);
+}
+
+.faqCard h3 {
+  font-size: 24px;
+  color: #0F2D52;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.faqCard p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #30465E;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+
+  .deathFAQ {
+    padding: 70px 0;
+  }
+
+  .deathFAQ h2 {
+    font-size: 30px;
+  }
+
+  .faqCard {
+    padding: 28px;
+  }
+
+  .faqCard h3 {
+    font-size: 21px;
+  }
+
+  .faqCard p {
+    font-size: 18px;
+  }
+
+}

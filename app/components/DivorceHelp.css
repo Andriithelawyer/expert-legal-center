@@ -1,0 +1,82 @@
+.divorceHelp {
+  padding: 90px 0;
+  background: #f8fbff;
+}
+
+.divorceHelp h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #0F2D52;
+  margin-bottom: 50px;
+}
+
+.helpCard {
+  max-width: 920px;
+  margin: 0 auto 35px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 40px;
+  box-shadow: 0 18px 45px rgba(15,45,82,.08);
+}
+
+.helpLead {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #30465E;
+  margin-bottom: 28px;
+}
+
+.helpCard ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.helpCard li {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #30465E;
+  margin-bottom: 18px;
+}
+
+.helpCard li:last-child {
+  margin-bottom: 0;
+}
+
+.helpNote {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 35px 40px;
+  box-shadow: 0 18px 45px rgba(15,45,82,.08);
+}
+
+.helpNote p {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #30465E;
+}
+
+@media (max-width: 900px) {
+
+  .divorceHelp {
+    padding: 70px 0;
+  }
+
+  .divorceHelp h2 {
+    font-size: 30px;
+  }
+
+  .helpCard,
+  .helpNote {
+    padding: 28px;
+  }
+
+  .helpLead,
+  .helpCard li,
+  .helpNote p {
+    font-size: 18px;
+  }
+
+}

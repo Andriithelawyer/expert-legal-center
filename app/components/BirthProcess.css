@@ -1,0 +1,130 @@
+.birthProcess{
+    padding:70px 0;
+    background:#ffffff;
+}
+
+.birthSectionTitle{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#0F2D52;
+
+    margin-bottom:42px;
+
+    font-weight:700;
+
+}
+
+.birthProcessGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+
+    gap:22px;
+
+}
+
+.birthProcessCard{
+
+    background:#ffffff;
+
+    border:1px solid #EEF2F7;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 12px 28px rgba(15,45,82,.06);
+
+    transition:.25s;
+
+}
+
+.birthProcessCard:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 36px rgba(15,45,82,.10);
+
+}
+
+.birthProcessTop{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:16px;
+
+}
+
+.birthProcessNumber{
+
+    width:36px;
+    height:36px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#0F2D52;
+
+    color:#ffffff;
+
+    font-size:15px;
+    font-weight:700;
+
+}
+
+.birthProcessIcon{
+
+    font-size:26px;
+
+}
+
+.birthProcessCard h3{
+
+    color:#0F2D52;
+
+    font-size:20px;
+
+    margin-bottom:12px;
+
+    line-height:1.35;
+
+}
+
+.birthProcessCard p{
+
+    color:#5E6470;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+    margin:0;
+
+}
+
+@media (max-width:900px){
+
+    .birthSectionTitle{
+
+        font-size:34px;
+
+    }
+
+    .birthProcessGrid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

@@ -1,0 +1,104 @@
+.divorceHero {
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5fb 100%);
+  padding: 90px 0;
+}
+
+.divorceHeroContent {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.divorceBadge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #0F2D52;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.divorceHero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #0F2D52;
+  margin-bottom: 26px;
+}
+
+.divorceLead {
+  font-size: 22px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 36px;
+}
+
+.divorceSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+  font-size: 19px;
+  color: #30465E;
+  font-weight: 500;
+}
+
+.divorceButton {
+  display: inline-block;
+  background: #0F2D52;
+  color: white;
+  text-decoration: none;
+  padding: 16px 34px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.divorceButton:hover {
+  background: #18457D;
+}
+
+.divorceCard {
+  background: white;
+  border-radius: 22px;
+  padding: 40px;
+  box-shadow: 0 18px 45px rgba(15,45,82,.08);
+}
+
+.divorceCardBadge {
+  display: inline-block;
+  margin-bottom: 26px;
+  padding: 8px 18px;
+  background: #EAF3FF;
+  color: #0F2D52;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.divorceCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.divorceCard li {
+  margin-bottom: 22px;
+  color: #30465E;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+  .divorceHeroContent {
+    grid-template-columns: 1fr;
+  }
+
+  .divorceHero h1 {
+    font-size: 38px;
+  }
+
+}

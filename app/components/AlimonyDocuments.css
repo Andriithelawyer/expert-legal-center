@@ -1,0 +1,52 @@
+.alimonyDocuments {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.alimonyDocumentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 28px;
+  margin-top: 45px;
+}
+
+.alimonyDocumentsCard {
+  background: #F8FBFF;
+  border: 1px solid #E5EAF0;
+  border-radius: 20px;
+  padding: 28px 32px;
+}
+
+.alimonyDocumentsCard h3 {
+  color: #0F2D52;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.alimonyDocumentsCard ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.alimonyDocumentsCard li {
+  color: #4B5563;
+  line-height: 1.9;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.alimonyDocumentsCard li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+
+  .alimonyDocuments {
+    padding: 70px 0;
+  }
+
+  .alimonyDocumentsGrid {
+    grid-template-columns: 1fr;
+  }
+
+}

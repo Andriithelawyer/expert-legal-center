@@ -1,0 +1,57 @@
+.dracsRequiredDocuments {
+  padding: 90px 0;
+  background: #F8FBFF;
+}
+
+.dracsRequiredGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.dracsRequiredCard {
+  background: #ffffff;
+  border: 1px solid #E5EAF0;
+  border-radius: 20px;
+  padding: 34px;
+  transition: all .25s ease;
+  box-shadow: 0 8px 22px rgba(15,45,82,.05);
+}
+
+.dracsRequiredCard:hover {
+  transform: translateY(-5px);
+  border-color: #0F2D52;
+  box-shadow: 0 16px 34px rgba(15,45,82,.08);
+}
+
+.dracsRequiredCard h3 {
+  color: #0F2D52;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.dracsRequiredCard ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dracsRequiredCard li {
+  margin-bottom: 16px;
+  line-height: 1.7;
+  color: #4B5563;
+  font-size: 17px;
+}
+
+.dracsRequiredCard li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width:900px){
+
+  .dracsRequiredDocuments{
+    padding:70px 0;
+  }
+
+}

@@ -1,0 +1,107 @@
+.birthDuration{
+
+    padding:60px 0;
+
+    background:#ffffff;
+
+}
+
+.birthDurationCard{
+
+    max-width:680px;
+
+    margin:0 auto;
+
+    padding:28px;
+
+    text-align:center;
+
+    background:#F8FBFF;
+
+    border:1px solid #EEF2F7;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 28px rgba(15,45,82,.06);
+
+}
+
+.birthDurationIcon{
+
+    font-size:34px;
+
+    margin-bottom:14px;
+
+}
+
+.birthDurationTime{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    line-height:1.25;
+
+    color:#0F2D52;
+
+    margin-bottom:18px;
+
+}
+
+.birthDurationText{
+
+    font-size:16px;
+
+    line-height:1.65;
+
+    color:#5E6470;
+
+    margin-bottom:14px;
+
+}
+
+.birthDurationNote{
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#8A94A6;
+
+    margin:0;
+
+}
+
+@media (max-width:900px){
+
+    .birthDuration{
+
+        padding:50px 0;
+
+    }
+
+    .birthDurationCard{
+
+        padding:24px;
+
+    }
+
+    .birthDurationTime{
+
+        font-size:28px;
+
+    }
+
+    .birthDurationText{
+
+        font-size:15px;
+
+    }
+
+    .birthDurationNote{
+
+        font-size:13px;
+
+    }
+
+}

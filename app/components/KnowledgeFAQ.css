@@ -1,0 +1,45 @@
+.knowledgeFAQ{
+  padding:90px 0;
+  background:#F8FBFF;
+}
+
+.knowledgeFAQList{
+  margin-top:50px;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.knowledgeFAQItem{
+  background:#ffffff;
+  border:1px solid #E5EAF0;
+  border-radius:18px;
+  padding:30px 34px;
+  transition:.25s;
+}
+
+.knowledgeFAQItem:hover{
+  border-color:#0F2D52;
+  box-shadow:0 14px 30px rgba(15,45,82,.08);
+}
+
+.knowledgeFAQItem h3{
+  color:#0F2D52;
+  font-size:22px;
+  margin-bottom:14px;
+}
+
+.knowledgeFAQItem p{
+  color:#4B5563;
+  font-size:17px;
+  line-height:1.8;
+  margin:0;
+}
+
+@media(max-width:900px){
+
+  .knowledgeFAQ{
+    padding:70px 0;
+  }
+
+}

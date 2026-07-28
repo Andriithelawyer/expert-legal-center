@@ -1,0 +1,66 @@
+.divorceFAQ {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.divorceFAQ h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #0F2D52;
+  margin-bottom: 55px;
+}
+
+.faqList {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: #f8fbff;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 18px 45px rgba(15,45,82,.08);
+}
+
+.faqItem:last-child {
+  margin-bottom: 0;
+}
+
+.faqItem h3 {
+  font-size: 24px;
+  color: #0F2D52;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.faqItem p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #30465E;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+
+  .divorceFAQ {
+    padding: 70px 0;
+  }
+
+  .divorceFAQ h2 {
+    font-size: 30px;
+  }
+
+  .faqItem {
+    padding: 26px;
+  }
+
+  .faqItem h3 {
+    font-size: 21px;
+  }
+
+  .faqItem p {
+    font-size: 17px;
+  }
+
+}

@@ -1,0 +1,117 @@
+.dracsHero {
+  background: linear-gradient(135deg, #F8FBFF 0%, #EEF5FB 100%);
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.dracsHeroContent {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.dracsBadge {
+  display: inline-block;
+  background: #0F2D52;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.dracsHeroLeft h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #0F2D52;
+  margin-bottom: 24px;
+}
+
+.dracsLead {
+  font-size: 22px;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 36px;
+}
+
+.dracsSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.dracsSteps div {
+  font-size: 18px;
+  color: #30465E;
+  font-weight: 600;
+}
+
+.dracsButton {
+  display: inline-block;
+  padding: 18px 36px;
+  background: #0F2D52;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.dracsButton:hover {
+  background: #18457D;
+}
+
+.dracsCard {
+  background: white;
+  border-radius: 22px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(15,45,82,.08);
+}
+
+.dracsCardBadge {
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 8px 18px;
+  background: #EAF3FF;
+  color: #0F2D52;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.dracsCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dracsCard li {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #30465E;
+  line-height: 1.7;
+}
+
+.dracsCard li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width:900px){
+
+  .dracsHeroContent{
+    grid-template-columns:1fr;
+  }
+
+  .dracsHeroLeft h1{
+    font-size:38px;
+  }
+
+}

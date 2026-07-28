@@ -1,0 +1,183 @@
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 40px;
+}
+
+.services{
+  padding:90px 0;
+  background:#ffffff;
+}
+
+.sectionTitle{
+  font-size:42px;
+  color:#0F2D52;
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.servicesGrid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:28px;
+}
+
+.serviceCard{
+  display:flex;
+  flex-direction:column;
+
+  background:#ffffff;
+
+  border:1px solid #E5EAF0;
+
+  border-radius:18px;
+
+  padding:28px;
+
+  box-shadow:0 8px 24px rgba(15,45,82,.05);
+
+  text-decoration:none;
+
+  transition:.25s ease;
+}
+
+.serviceCard:hover{
+  transform:translateY(-5px);
+
+  border-color:#0F2D52;
+
+  box-shadow:0 16px 35px rgba(15,45,82,.10);
+}
+
+.serviceIcon{
+  font-size:40px;
+  margin-bottom:18px;
+}
+
+.serviceCard h3{
+  color:#0F2D52;
+  font-size:23px;
+  line-height:1.35;
+  margin-bottom:14px;
+}
+
+.serviceCard p{
+  flex:1;
+
+  color:#4B5563;
+
+  font-size:16px;
+
+  line-height:1.75;
+
+  margin-bottom:24px;
+}
+
+.serviceButton{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  align-self:flex-start;
+
+  background:#0F2D52;
+
+  color:#ffffff;
+
+  padding:13px 22px;
+
+  border-radius:12px;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  transition:.25s ease;
+}
+
+.serviceCard:hover .serviceButton{
+  background:#18457D;
+}
+
+@media (max-width:1000px){
+
+  .services{
+    padding:80px 0;
+  }
+
+  .servicesGrid{
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .container{
+    padding:0 22px;
+  }
+
+  .services{
+    padding:70px 0;
+  }
+
+  .sectionTitle{
+    font-size:34px;
+    margin-bottom:38px;
+  }
+
+  .servicesGrid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .serviceCard{
+    padding:24px;
+  }
+
+  .serviceIcon{
+    font-size:34px;
+    margin-bottom:14px;
+  }
+
+  .serviceCard h3{
+    font-size:21px;
+  }
+
+  .serviceCard p{
+    font-size:16px;
+    line-height:1.65;
+    margin-bottom:20px;
+  }
+
+  .serviceButton{
+    width:100%;
+    justify-content:center;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .container{
+    padding:0 18px;
+  }
+
+  .sectionTitle{
+    font-size:30px;
+  }
+
+  .serviceCard{
+    padding:22px;
+  }
+
+  .serviceCard h3{
+    font-size:20px;
+  }
+
+  .serviceCard p{
+    font-size:15px;
+  }
+
+}

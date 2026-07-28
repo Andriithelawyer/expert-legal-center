@@ -1,0 +1,53 @@
+.dracsHelp {
+  padding: 90px 0;
+  background: #F8FBFF;
+}
+
+.dracsHelpGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.dracsHelpCard {
+  background: #ffffff;
+  border: 1px solid #E5EAF0;
+  border-radius: 20px;
+  padding: 36px 30px;
+  text-align: center;
+  transition: all .25s ease;
+  box-shadow: 0 8px 22px rgba(15,45,82,.05);
+}
+
+.dracsHelpCard:hover {
+  transform: translateY(-5px);
+  border-color: #0F2D52;
+  box-shadow: 0 16px 34px rgba(15,45,82,.08);
+}
+
+.dracsHelpIcon {
+  font-size: 46px;
+  margin-bottom: 22px;
+}
+
+.dracsHelpCard h3 {
+  color: #0F2D52;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.dracsHelpCard p {
+  color: #4B5563;
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width:900px){
+
+  .dracsHelp{
+    padding:70px 0;
+  }
+
+}

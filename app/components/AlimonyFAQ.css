@@ -1,0 +1,53 @@
+.alimonyFAQ {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.alimonyFAQList {
+  max-width: 950px;
+  margin: 50px auto 0;
+}
+
+.alimonyFAQItem {
+  background: #F8FBFF;
+  border: 1px solid #E5EAF0;
+  border-radius: 18px;
+  padding: 28px 32px;
+  margin-bottom: 22px;
+  transition: all .25s ease;
+}
+
+.alimonyFAQItem:hover {
+  border-color: #0F2D52;
+  box-shadow: 0 10px 28px rgba(15,45,82,.06);
+}
+
+.alimonyFAQItem:last-child {
+  margin-bottom: 0;
+}
+
+.alimonyFAQItem h3 {
+  color: #0F2D52;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.alimonyFAQItem p {
+  color: #4B5563;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width:900px){
+
+  .alimonyFAQ{
+    padding:70px 0;
+  }
+
+  .alimonyFAQItem{
+    padding:24px;
+  }
+
+}

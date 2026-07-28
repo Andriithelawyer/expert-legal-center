@@ -1,0 +1,110 @@
+.knowledgeHero{
+  padding:90px 0;
+  background:linear-gradient(135deg,#F8FBFF 0%,#EEF5FC 100%);
+}
+
+.knowledgeHeroContent{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+
+.knowledgeBadge{
+  display:inline-block;
+  background:#EAF3FF;
+  color:#0F2D52;
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:600;
+  margin-bottom:24px;
+}
+
+.knowledgeHeroLeft h1{
+  font-size:52px;
+  line-height:1.2;
+  color:#0F2D52;
+  margin-bottom:28px;
+}
+
+.knowledgeLead{
+  font-size:20px;
+  line-height:1.9;
+  color:#4B5563;
+  margin-bottom:36px;
+}
+
+.knowledgeAdvantages{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-bottom:40px;
+}
+
+.knowledgeAdvantages div{
+  font-size:18px;
+  color:#0F2D52;
+}
+
+.knowledgeButton{
+  display:inline-block;
+  padding:18px 34px;
+  background:#F4B400;
+  color:#0F2D52;
+  text-decoration:none;
+  border-radius:14px;
+  font-weight:700;
+  transition:.25s;
+}
+
+.knowledgeButton:hover{
+  transform:translateY(-3px);
+}
+
+.knowledgeCard{
+  background:#ffffff;
+  border-radius:22px;
+  padding:38px;
+  box-shadow:0 14px 40px rgba(15,45,82,.08);
+}
+
+.knowledgeCardBadge{
+  display:inline-block;
+  background:#EAF3FF;
+  color:#0F2D52;
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:600;
+  margin-bottom:24px;
+}
+
+.knowledgeCard ul{
+  margin:0;
+  padding-left:20px;
+}
+
+.knowledgeCard li{
+  margin-bottom:18px;
+  color:#4B5563;
+  line-height:1.8;
+}
+
+@media(max-width:900px){
+
+  .knowledgeHero{
+    padding:70px 0;
+  }
+
+  .knowledgeHeroContent{
+    grid-template-columns:1fr;
+  }
+
+  .knowledgeHeroLeft h1{
+    font-size:38px;
+  }
+
+  .knowledgeLead{
+    font-size:18px;
+  }
+
+}

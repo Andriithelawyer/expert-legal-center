@@ -1,0 +1,46 @@
+.dracsDocuments {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.dracsDocumentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.dracsDocumentCard {
+  background: #F8FBFF;
+  border: 1px solid #E5EAF0;
+  border-radius: 20px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: all .25s ease;
+}
+
+.dracsDocumentCard:hover {
+  transform: translateY(-6px);
+  border-color: #0F2D52;
+  box-shadow: 0 14px 32px rgba(15,45,82,.08);
+}
+
+.dracsDocumentIcon {
+  font-size: 48px;
+  margin-bottom: 22px;
+}
+
+.dracsDocumentCard h3 {
+  color: #0F2D52;
+  font-size: 22px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width:900px){
+
+  .dracsDocuments{
+    padding:70px 0;
+  }
+
+}
