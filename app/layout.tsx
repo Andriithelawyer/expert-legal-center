@@ -16,8 +16,62 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Expert Legal Center",
-  description: "Правова допомога громадянам України незалежно від країни перебування",
+
+  metadataBase: new URL("https://example.com"),
+
+  title: {
+    default: "Expert Legal Center | Правова допомога громадянам України",
+    template: "%s | Expert Legal Center",
+  },
+
+  description:
+    "Юридична допомога громадянам України, які перебувають за кордоном або на тимчасово окупованих територіях. Народження дитини, смерть родича, розірвання шлюбу, документи ДРАЦС, представництво у судах України.",
+
+  keywords: [
+    "народження дитини ТОТ",
+    "смерть на ТОТ",
+    "розірвання шлюбу",
+    "документи ДРАЦС",
+    "юрист Україна",
+    "юрист за кордоном",
+    "суд Україна",
+    "свідоцтво про народження",
+    "свідоцтво про смерть",
+    "юридична допомога українцям",
+    "Expert Legal Center",
+  ],
+
+  authors: [
+    {
+      name: "Expert Legal Center",
+    },
+  ],
+
+  creator: "Expert Legal Center",
+
+  publisher: "Expert Legal Center",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "Expert Legal Center",
+    description:
+      "Правова допомога громадянам України незалежно від країни перебування.",
+    type: "website",
+    locale: "uk_UA",
+    siteName: "Expert Legal Center",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Expert Legal Center",
+    description:
+      "Правова допомога громадянам України незалежно від країни перебування.",
+  },
+
 };
 
 export default function RootLayout({
