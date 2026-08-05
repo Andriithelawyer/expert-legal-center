@@ -1,47 +1,33 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://example.com",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
+  const baseUrl = "https://expert-legal-center.vercel.app";
 
-    {
-      url: "https://example.com/birth-tot",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-
-    {
-      url: "https://example.com/death-tot",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-
-    {
-      url: "https://example.com/divorce-tot",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-
-    {
-      url: "https://example.com/knowledge",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-
-    {
-      url: "https://example.com/consultation",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+  const routes = [
+    "",
+    "/birth-tot",
+    "/death-tot",
+    "/divorce-tot",
+    "/dracs",
+    "/alimony",
+    "/knowledge",
+    "/consultation",
   ];
+
+  return routes.map((route, index) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency:
+      index === 0 || route === "/knowledge"
+        ? "weekly"
+        : "monthly",
+    priority:
+      index === 0
+        ? 1
+        : route === "/birth-tot" ||
+          route === "/death-tot" ||
+          route === "/divorce-tot"
+        ? 0.9
+        : 0.8,
+  }));
 }
