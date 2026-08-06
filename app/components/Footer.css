@@ -46,6 +46,23 @@
   color:#A9D3FF;
 }
 
+.footerHours{
+  margin-top:10px;
+  line-height:1.6;
+  font-weight:600;
+}
+
+.footerNotice{
+  margin-top:18px;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.15);
+
+  color:rgba(255,255,255,.8);
+
+  font-size:14px;
+  line-height:1.6;
+}
+
 .footerBottom{
   border-top:1px solid rgba(255,255,255,.15);
   padding:20px;
