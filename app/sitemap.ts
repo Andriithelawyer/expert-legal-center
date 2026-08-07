@@ -1,14 +1,14 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
+
+const baseUrl = "https" + ":" + "/" + "/" + "expert-legal-center.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://expert-legal-center.vercel.app";
-
   const routes = [
     "",
     "/birth-tot",
-    "/death-tot",
-    "/divorce-tot",
     "/dracs",
+    "/divorce-tot",
+    "/death-tot",
     "/alimony",
     "/knowledge",
     "/consultation",
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       index === 0
         ? 1
         : route === "/birth-tot" ||
-          route === "/death-tot" ||
+          route === "/dracs" ||
           route === "/divorce-tot"
         ? 0.9
         : 0.8,
